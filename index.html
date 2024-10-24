@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="./src/output.css"
+    />
+  </head>
+  <body>
+    <div class="p-[20px] flex items-center justify-center gap-[20px]">
+      <input
+        id="colorPicker"
+        class="border rounded-full h-[50px] w-[50px] overflow-hidden"
+        type="color"
+      />
+      <button
+        id="bgChange"
+        class="border border-[green] px-[12px] py-[10px] rounded-full bg-[green] text-white"
+      >
+        BackGround Color
+      </button>
+
+      <button
+        id="randomColor"
+        class="border border-[green] px-[12px] py-[10px] rounded-full bg-[green] text-white"
+      >
+        Generate Random Color
+      </button>
+      <div
+        class="border rounded-full border-green bg-[green] text-white px-[12px] py-[10px] flex gap-[10px]"
+      >
+        <button
+          id="decrement"
+          class="text-black bg-[white] rounded-full h-[25px] w-[35px] text-[18px] text-center"
+        >
+          -
+        </button>
+        <input
+          id="LogoSize"
+          type="number"
+          placeholder="change logo size"
+          class="text-black px-[10px] w-[100px] text-center"
+          value="50"
+        />
+        <button
+          id="increment"
+          class="text-black bg-white rounded-full h-[25px] w-[35px] text-[18px] text-center"
+        >
+          +
+        </button>
+      </div>
+    </div>
+    <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+      <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+        <img
+          class="mx-auto w-auto"
+          src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png?20220706172052"
+          alt="Your Company"
+          id="logo"
+        />
+      </div>
+
+      <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <form class="space-y-6 loginFrom1">
+          <div>
+            <label
+              for="email"
+              class="block text-sm font-medium leading-6 text-balance"
+              >Email address</label
+            >
+            <div class="mt-2">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="current-email"
+                placeholder="enter your email"
+                class="block w-full rounded-md border-0 bg-white/5 py-1.5 text-cyan-600 shadow-sm ring-1 ring-inset ring-red-500 focus:ring-2 focus:ring-inset focus:ring-balck sm:text-sm sm:leading-6 px-[5px] placeholder:uppercase"
+              />
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between">
+              <label
+                for="password"
+                class="block text-sm font-medium leading-6 text-black"
+                >Password</label
+              >
+            </div>
+            <div class="mt-2 relative">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                placeholder="enter your password"
+                class="block w-full rounded-md border-0 bg-white/5 py-1.5 text-black shadow-sm ring-1 ring-inset ring-red-500 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm sm:leading-6 px-[5px] placeholder:uppercase"
+              />
+              <i
+                id="eye"
+                class="fa-solid fa-eye-slash absolute top-[10px] right-1"
+              ></i>
+              <!-- class="fa-solid " -->
+              <!-- <i class="fa-solid fa-eye"></i> -->
+            </div>
+          </div>
+
+          <div>
+            <button
+              type="submit"
+              id="loginBtn"
+              class="flex w-full justify-center rounded-md bg-red-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500"
+            >
+              Sign in
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
